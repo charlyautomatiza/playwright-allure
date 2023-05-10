@@ -1,0 +1,21 @@
+{
+  "name": "playwright-allure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "allure-version": "allure --version",
+    "allure-report": "allure generate ./allure-results --clean",
+    "open-report": "npm run allure-report && allure open ./allure-report",
+    "clean": "rimraf allure-results && rimraf allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
+    "allure-commandline": "^2.22.0",
+    "allure-playwright": "^2.2.1",
+    "rimraf": "^5.0.0"
+  }
+}
